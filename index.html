@@ -4,26 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h4 id="player"> Player  </h4>
-        <h4 id="tossElement">
-            Toss:
+        <h1>Dice Game</h1>
+        <div class="player-container">
+            <div class="P1container">
+                <p>Player 1</p>
+                <h4 id="player1"> Player1  </h4>
+                <div class="buttonDiv">
+
+                    <h4 id="pl1Dice1">
+                        0
+                    </h4>  | 
+                    <h4 id="pl1Dice2">
+                        0
+                    </h4>
+                </div>
+                <button id="btnPlayer1Dice" onclick="diceRoll1()"> Dice Roll</button>
+            </div>
+            <div class="p2container">
+                <p>Player 2</p>
+                <h4 id="player2"> Player2  </h4>
+                <div class="buttonDiv">
+                <h4 id="pl2dice1">
+                   0
+                </h4> | 
+                <h4 id="pl2dice2">
+                   0
+                </h4>
+                </div>
+                <button id="btnPlayer2Dice" onclick="diceRoll2()" >  Dice Roll</button>
+            </div>
+        </div>
+        <div id="toss-div" class="">
+        <h4 id="tossElement" >
+            Start Toss
         </h4>
         <button  onClick="tossFunc()">
         Toss
         </button>
+        </div>
 
-        <h4 id="dice1">
-            Dice 1
-        </h4>
-        <h4 id="dice2">
-            Dice 2
-        </h4>
+       
 
-    <button id="btnPlayer1Dice" onclick="diceRoll1()"> Player1 Dice</button>
-    <button id="btnPlayer1Dice" onclick="diceRoll1()"> Plyaer2 Dice</button>
+    
+
 
     <h1 id="winner">
         
