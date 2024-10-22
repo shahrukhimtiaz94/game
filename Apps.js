@@ -69,7 +69,7 @@ function diceRoll1() {
         alert('Win ');
         btnPlayer2Dice.disabled = true
         btnPlayer1Dice.disabled = true
-        winPlayer.innerHTML= 'Winner is Player 1'
+        winPlayer.innerHTML="Winner: "+ pl1Name;
     }
     else{
        
@@ -99,7 +99,8 @@ function diceRoll2() {
         btnPlayer2Dice.disabled = true
         btnPlayer1Dice.disabled = true
         
-        winPlayer.innerHTML='Winner is Player 2';
+        winPlayer.innerHTML="Winner: "+ pl2Name;
+         
             
         }
         else{
